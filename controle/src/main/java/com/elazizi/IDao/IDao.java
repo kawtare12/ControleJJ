@@ -1,0 +1,15 @@
+package com.elazizi.IDao;
+
+import java.util.List;
+
+public interface IDao <T> {
+	// T represente la classe avec laquelle on travaillera par la suite 
+	T create (T o);
+	boolean  delete(T o);
+	T update(T o);
+	List<T> findAll();
+	T findById (Long id);
+	
+	
+
+}
